@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelompok 4 — Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <svg class="preloader-num" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path id="numPath" d="M120 20 L40 130 L150 130 M120 20 L120 180" fill="none" stroke="#d1263f"
+                stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="nav-brand">Kelompok<span>04</span></a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active" data-section="home">Beranda</a>
+                <a href="#tentang" class="nav-link" data-section="tentang">Tentang</a>
+                <a href="#anggota" class="nav-link" data-section="anggota">Anggota</a>
+                <a href="#proyek" class="nav-link" data-section="proyek">Proyek</a>
+                <a href="#kontak" class="nav-link" data-section="kontak">Kontak</a>
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="Buka menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <canvas id="particles"></canvas>
+        <div class="hero-glow"></div>
+        <div class="hero-inner">
+            <div class="hero-num" aria-hidden="true">04</div>
+            <p class="hero-eyebrow">Tugas &amp; Proyek Kelas</p>
+            <h1 class="hero-title">
+                WELCOME TO <span class="highlight">OUR WEBSITE KELOMPOK 4</span>.<br>
+                <span class="typing" id="typingText"></span><span class="cursor">|</span>
+            </h1>
+            <p class="hero-desc">
+                Sebuah kumpulan karya, ide, dan kerja sama empat orang yang percaya
+                bahwa hasil terbaik lahir dari diskusi yang jujur dan proses yang rapi.
+            </p>
+            <div class="hero-actions">
+                <a href="#proyek" class="btn btn-primary">Lihat Proyek Kami</a>
+                <a href="#anggota" class="btn btn-outline">Kenali Timnya</a>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang -->
+    <section class="section tentang" id="tentang">
+        <div class="section-inner">
+            <div class="reveal" data-reveal>
+                <h2 class="section-title">Tentang Kelompok Kami</h2>
+                <p class="section-text">
+                    Kelompok 4 dibentuk untuk menyelesaikan tugas ini dengan cara yang
+                    berbeda: bukan sekadar membagi pekerjaan, tapi benar-benar membangunnya
+                    bersama. Halaman ini adalah ringkasan perjalanan, anggota, dan hasil
+                    kerja kami selama mengerjakan proyek.
+                </p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card reveal" data-reveal>
+                    <span class="stat-num" data-count="4">0</span>
+                    <span class="stat-label">Anggota Tim</span>
+                </div>
+                <div class="stat-card reveal" data-reveal style="transition-delay:.1s">
+                    <span class="stat-num" data-count="12">0</span>
+                    <span class="stat-label">Diskusi Kelompok</span>
+                </div>
+                <div class="stat-card reveal" data-reveal style="transition-delay:.2s">
+                    <span class="stat-num" data-count="100" data-suffix="%">0</span>
+                    <span class="stat-label">Dikerjakan Bersama</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Anggota -->
+    <section class="section anggota" id="anggota">
+        <div class="section-inner">
+            <div class="reveal" data-reveal>
+                <p class="section-eyebrow">Tim Kami</p>
+                <h2 class="section-title">Empat Orang, Satu Tujuan</h2>
+            </div>
+            <div class="team-grid">
+
+                <article class="team-card reveal" data-reveal>
+                    <div class="team-avatar">A1</div>
+                    <h3 class="team-role">Aisaturrahmi</h3>
+                    <img src="aisha.jpeg" style="150px" width="150px" height="150px">
+                    <p class="team-desc">Mengatur jadwal, memastikan semua bagian tugas selesai tepat waktu.</p>
+                </article>
+
+                <article class="team-card reveal" data-reveal style="transition-delay:.08s">
+                    <div class="team-avatar">A2</div>
+                    <h3 class="team-name">Amelia Ramadhani</h3>
+                    <img src="lia.jpeg" style="150px" width="150px" height="150px">
+                    <p class="team-desc">Bertanggung jawab mengumpulkan dan menyusun materi utama.</p>
+                </article>
+
+                <article class="team-card reveal" data-reveal style="transition-delay:.16s">
+                    <div class="team-avatar">A3</div>
+                    <h3 class="team-name">Dewi Ratnasari</h3>
+                    <img src="dewi.jpeg" style="150px" width="150px" height="150px">
+                    <p class="team-desc">Menata tampilan agar hasil kerja mudah dipahami dan enak dilihat.</p>
+                </article>
+
+                <article class="team-card reveal" data-reveal style="transition-delay:.24s">
+                    <div class="team-avatar">A4</div>
+                    <h3 class="team-name">Nisa Atria</h3>
+                    <img src="nisa.jpeg" style="150px" width="150px" height="150px">
+                    <p class="team-desc">Menyusun laporan akhir dan menyiapkan bahan presentasi.</p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyek -->
+    <section class="section proyek" id="proyek">
+        <div class="section-inner">
+            <div class="reveal" data-reveal>
+                <p class="section-eyebrow">Hasil Kerja</p>
+                <h2 class="section-title">Proyek &amp; Karya Kami</h2>
+            </div>
+            <div class="project-grid">
+
+                <article class="project-card reveal" data-reveal>
+                    <div class="project-num">01</div>
+                    <h3>Laporan Penelitian</h3>
+                    <p>Ringkasan hasil riset kelompok mengenai topik yang ditugaskan, disusun secara sistematis.</p>
+                </article>
+
+                <article class="project-card reveal" data-reveal style="transition-delay:.08s">
+                    <div class="project-num">02</div>
+                    <h3>Presentasi Kelas</h3>
+                    <p>Slide presentasi yang dirancang untuk menjelaskan temuan kami secara ringkas dan menarik.</p>
+                </article>
+
+                <article class="project-card reveal" data-reveal style="transition-delay:.16s">
+                    <div class="project-num">03</div>
+                    <h3>Website Portofolio</h3>
+                    <p>Halaman yang sedang Anda lihat sekarang — dibangun dari nol oleh tim kami.</p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section class="section kontak" id="kontak">
+        <div class="section-inner">
+            <div class="reveal" data-reveal>
+                <p class="section-eyebrow">Hubungi Kami</p>
+                <h2 class="section-title">Jika Anda Tertarik Dengan Website Kami</h2>
+                <p class="section-text">
+                    Silakan hubungi melalui email di bawah ini.
+                </p>
+            </div>
+            <div class="kontak-grid reveal" data-reveal>
+                <div class="kontak-item">
+                    <span class="kontak-label">Email Kelompok</span>
+                    <span class="kontak-value">kelompokchannn@gmail.com</span>
+                </div>
+                <div class="kontak-item">
+                    <span class="kontak-label">Kelas</span>
+                    <span class="kontak-value">— Unit D —</span>
+                </div>
+                <div class="kontak-item">
+                    <span class="kontak-label">Mata Pelajaran</span>
+                    <span class="kontak-value">— Teknologi Informasi dan Media Online —</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 Kelompok 4. Dibuat dengan kerja sama tim.</p>
+        <button class="to-top" id="toTop" aria-label="Kembali ke atas">↑</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
